@@ -1,70 +1,33 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ROADWATCH
 
-## Available Scripts
+ detecting and classifying vehicles on roads
 
-In the project directory, you can run:
 
-### `npm start`
+## PROBLEM STATEMENT
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The problem statement addressed by this proposed project is the lack of an efficient and accurate system for detecting and classifying vehicles on roads. The existing methods for vehicle detection are often manual, time-consuming, and prone to errors. The current approaches involve human intervention and require extensive manual labor, leading to low accuracy and high error rates. Moreover, the lack of real-time monitoring and analysis of vehicle data poses a significant challenge in effective traffic control and targeted advertising
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## PROJECT REPORT
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Documentation](https://drive.google.com/file/d/1iYFcArIKSQp5ff8R7JZFwAAhXzoCNGjF/view?usp=sharing)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## RUNNING THE PROJECT
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+In this repository you can see 2 main programs: `roadwatch_yolov3.py` and `roadwatch_yolov3_custom.py`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### HOW TO RUN
+- Download `.weights` file for YOLO: https://www.kaggle.com/datasets/shivam316/yolov3-weights
+- Move `.weights` file to `yolo/` folder
+- Go to the project's repository via command line
+- type python `roadwatch_yolov3_custom.py -y yolo --input videos/your_test_video_name --output output --skip-frames 5` and hit `Enter`
 
-### `npm run eject`
+The proccessed video will be saved to the  `output/` folder.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Starting the Dashboard
+- using `NPM` use command `npm i` to install the required packages.
+- use `npm run start` to start the ReactJS Dashboard.
+- Once a video is proccessed, and file data is stored in JSON in the `output/` folder, it can be fetched using Project Dashboard.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
